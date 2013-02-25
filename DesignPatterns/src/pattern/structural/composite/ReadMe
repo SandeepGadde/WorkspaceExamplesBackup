@@ -1,0 +1,7 @@
+In developing applications, we come across components which are individual objects and also can be collection of objects. Composite pattern can represent both the conditions. In this pattern, you can develop tree structures for representing part-whole hierarchies.
+
+TThe most common example in this pattern is of a company’s employee hierarchy. We here will also take the same example.
+
+The employees of a company are at various positions. Now, say in a hierarchy, the manager has subordinates; also the Project Leader has subordinates, i.e. employees reporting to him/her. The developer has no subordinates.
+
+So, let’s have a look at the class Employee: This is a simple class with getters and setters for attributes as name, salary and subordinates.

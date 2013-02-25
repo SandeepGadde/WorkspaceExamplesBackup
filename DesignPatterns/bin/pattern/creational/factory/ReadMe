@@ -1,0 +1,5 @@
+Factory of what? Of classes. 
+In simple words, if we have a super class and n sub-classes, 
+and based on data provided, 
+we have to return the object of one of the sub-classes, 
+we use a factory pattern.

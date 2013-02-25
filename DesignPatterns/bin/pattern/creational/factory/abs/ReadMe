@@ -1,0 +1,12 @@
+This pattern is one level of abstraction higher than factory pattern. 
+This means that the abstract factory returns the factory of classes. 
+Like Factory pattern returned one of the several sub-classes, 
+this returns such factory which later will return one of the sub-classes.
+
+Let’s understand this pattern with the help of an example.
+
+Suppose we need to get the specification of various parts of a computer based 
+on which work the computer will be used for.
+
+The different parts of computer are, say Monitor, RAM and Processor. 
+The different types of computers are PC, Workstation and Server. 

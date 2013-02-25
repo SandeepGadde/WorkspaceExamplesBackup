@@ -1,0 +1,5 @@
+The Bridge Pattern is used to separate out the interface from its implementation. Doing this gives the flexibility so that both can vary independently.
+
+The best example for this is like the electric equipments you have at home and their switches. For e.g., the switch of the fan. The switch is the interface and the actual implementation is the Running of the fan once its switched-on. Still, both the switch and the fan are independent of each other. Another switch can be plugged in for the fan and this switch can be connected to light bulb.
+
+Let’s see how we can convert this into a software program. Switch is the interface having two functions, switchOn() and switchOff().

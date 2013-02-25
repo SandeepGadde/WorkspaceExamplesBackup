@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.example.customview"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+   
+    <com.example.customview.MyPieChart
+        android:id="@+id/MyPie"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        custom:labelHeight="20dp"
+        custom:labelWidth="110dp"
+        custom:labelY="85dp"
+        custom:labelPosition="left"
+        android:background="@android:color/white"
+        custom:pieRotation="0"            
+        custom:labelColor="@android:color/black"
+        custom:autoCenterPointerInSlice="true"
+        custom:pointerRadius="4dp"
+        android:padding="10dp"/>
+
+</RelativeLayout>

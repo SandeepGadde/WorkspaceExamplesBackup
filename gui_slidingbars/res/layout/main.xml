@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ent.dom.slidingbars.widget.AnimationLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/animation_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    >
+    <LinearLayout
+        android:id="@id/animation_layout_sidebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+        <!--  <ListView
+            android:id="@+id/sidebar_list"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            />-->
+            <com.directionalviewpager.DirectionalViewPager
+			    android:id="@+id/pager"
+			    android:layout_height="230dp"
+			    android:layout_width="fill_parent"
+			    android:orientation="vertical" />
+    </LinearLayout>
+
+    <!-- To make LinearLayout clickable to trigger onContentTouchedWhenOpening()  -->
+    <LinearLayout
+        android:id="@id/animation_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:weightSum="1.0"
+        
+        >
+		<Button android:id="@+id/content_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:text="l2b"    
+            android:background="@drawable/download"   
+            android:layout_gravity="left"     
+            android:onClick="onClickContentButton"
+            />            
+         <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.9"
+	        android:orientation="vertical"
+	        android:background="@drawable/getauto"
+	        />
+         <Button android:id="@+id/content_button2"
+           android:layout_width="wrap_content"
+           android:layout_height="0dp"
+           android:layout_weight="0.05"
+           android:background="@drawable/download"   
+           android:text="abc"       
+           android:layout_gravity="bottom"       
+           android:onClick="onClickContentButton2"
+           />        
+    </LinearLayout>
+</ent.dom.slidingbars.widget.AnimationLayout>

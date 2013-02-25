@@ -1,0 +1,9 @@
+The Adapter pattern is used so that two unrelated interfaces can work together. The joining between them is called an Adapter. This is something like we convert interface of one class into interface expected by the client. We do that using an Adapter. 
+
+Let’s try and understand this with the help of an example. Again, I will like to take a general example. We all have electric sockets in our houses of different sizes and shapes. I will take an example of a socket of 15 Ampere. This is a bigger socket and the other one which is smaller is of 5 Ampere. A 15 Amp plug cannot fit into a 5 Amp socket. Here, we will use an Adapter. The adapter can be called a connector here. The connector connects both of these and gives output to the client plug which is of 5 Amp.
+
+The Adapter is something like this. It will be having the plug of suitable for 15 Amp and a socket suitable for a 5 Amp plug. So, that the 5 Amp plug which here is the client can fit in and also the server which here is the 15 Amp socket can give the output.
+
+Let’s try and convert the same example into a software program. How do we do this? Let’s try and understand the problem once more. We have a 5 Amp plug and want a 5 Amp socket so that it can work. We DO NOT have a 5 Amp socket, what we have is a 15 Amp socket in which the 5 Amp plug cannot fit. The problem is how to cater to the client without changing the plug or socket.
+
+The Adapter Pattern can be implemented in two ways, by Inheritance and by Composition.

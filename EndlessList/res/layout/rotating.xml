@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    	<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dip"
+            android:paddingRight="5dip"
+            android:textStyle="bold"
+            android:text="Y rotation"
+            />
+        <SeekBar
+            android:orientation="horizontal"            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rotationY"
+        />       
+	<ImageView
+        android:layout_width="200dip"
+        android:layout_height="150dip"
+        android:layout_marginLeft="50dip"
+        android:layout_marginTop="50dip"
+        android:src="@drawable/mycar"
+        android:text="Rotating Button"
+        android:id="@+id/rotatingButton"
+        />
+</LinearLayout>
